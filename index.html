@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guest House</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    <style>
+        .header__container {
+          background-image: url('https://www.kingsukhguesthouse.com/assets/ayodhya.webp');
+          background-repeat: no-repeat;
+          background-attachment: scroll;
+          background-size: 100% 100%;
+        }
+        .text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+
+        .text-overlay h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .text-overlay p {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+        </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav__bar">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHzbSvH2W8dTFroHUyueFyVNtVE1eNKrDukg&s" alt="Logo" class="logo">
+            <div class="nav__menu__btn">&#9776;</div>
+            <ul class="nav__links" >
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#explore">Explore</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="btn nav__btn">Book Now</button>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header__container" id="home">            <br><br><br>
+
+            <div class="text-overlay">
+                <h1>Welcome to Our Guest House</h1>
+                <p>Experience the serenity and comfort</p>
+            </div>
+            <br><br><br><br><br><br>
+            
+
+        </div>
+        <div class="booking__container">
+            <form class="booking__form">
+                <div class="input__group">
+                    <label for="checkin">Check-in</label>
+                    <input type="date" id="checkin" placeholder="Check-in">
+                </div>
+                <div class="input__group">
+                    <label for="checkout">Check-out</label>
+                    <input type="date" id="checkout" placeholder="Check-out">
+                </div>
+                <div class="input__group">
+                    <label for="guests">Guests</label>
+                    <input type="number" id="guests" placeholder="Guests">
+                </div>
+                <button class="btn">Check Availability</button>
+            </form>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section__container">
+        <div class="about__container" id="about">
+            <div class="about__image">
+                <img src="out.jpg" alt="About Us">
+            </div>
+            <div class="about__content">
+                <h2 class="section__subheader">About Us</h2>
+                <h3 class="section__header">Discover Our Story</h3>
+                <p class="section__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet libero id purus facilisis luctus at non risus.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms" class="section__container"><div id="rooms">
+        <h2 class="section__subheader">Rooms</h2>
+        <h3 class="section__header">Our Comfortable Rooms</h3>
+        <div class="room__grid">
+            <div class="room__card">
+                <div class="room__card__image">
+                    <img src="room1.jpg" alt="Room 1">
+                    <div class="room__card__icons">
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                    </div>
+                </div>
+                <div class="room__card__details">
+                    <h4>Deluxe Room</h4>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <h5>Price: <span>$100/night</span></h5>
+                </div>
+            </div>
+            <div class="room__card">
+                <div class="room__card__image">
+                    <img src="small.jpg" alt="Room 2">
+                    <div class="room__card__icons">
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                    </div>
+                </div>
+                <div class="room__card__details">
+                    <h4>Standard Room</h4>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <h5>Price: <span>$80/night</span></h5>
+                </div>
+            </div>
+            <div class="room__card">
+                <div class="room__card__image">
+                    <img src="large.jpg" alt="Room 3">
+                    <div class="room__card__icons">
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                    </div>
+                </div>
+                <div class="room__card__details">
+                    <h4>Suite</h4>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <h5>Price: <span>$150/night</span></h5>
+                </div>
+            </div>
+        </div></div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section__container service">
+        <div class="service__container">
+            <div class="service__content">
+                <h2 class="section__subheader">Services</h2>
+                <h3 class="section__header">Our Top-notch Services</h3>
+                <ul class="service__list">
+                    <li><span>&#127968;</span> Room Service</li>
+                    <li><span>&#128705;</span> Free Wi-Fi</li>
+                    <li><span>&#127859;</span> Breakfast Included</li>
+                    <li><span>&#128663;</span> Airport Pickup</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="gallery" class="gallery"><div id="gallery" >
+      <h2 class="gallery__title">Our Gallery</h2>
+      <div class="gallery__grid">
+          <div class="gallery__item">
+              <div class="gallery__card">
+                  <img src="1.jpg" alt="Gallery Image 1" class="gallery__img">
+                  <div class="gallery__overlay">
+                      <p class="gallery__text">View from the guesthouse</p>
+                  </div>
+              </div>
+          </div>
+          <div class="gallery__item">
+              <div class="gallery__card">
+                  <img src="ayodhya.webp" alt="Gallery Image 2" class="gallery__img">
+                  <div class="gallery__overlay">
+                      <p class="gallery__text">Surroundings</p>
+                  </div>
+              </div>
+          </div>
+          <div class="gallery__item">
+              <div class="gallery__card">
+                  <img src="flower.jpg" alt="Gallery Image 3" class="gallery__img">
+                  <div class="gallery__overlay">
+                      <p class="gallery__text">View from the guesthouse's window </p>
+                  </div>
+              </div>
+          </div>
+          <div class="gallery__item">
+              <div class="gallery__card">
+                  <img src="out.jpg" alt="Gallery Image 4" class="gallery__img" height="200px">
+                  <div class="gallery__overlay">
+                      <p class="gallery__text">View of the guesthouse from front side</p>
+                  </div>
+              </div>
+          </div>
+          <div class="gallery__item">
+              <div class="gallery__card">
+                  <img src="large.jpg" alt="Gallery Image 5" class="gallery__img">
+                  <div class="gallery__overlay">
+                      <p class="gallery__text">Bed Rooms in Guesthouse</p>
+                  </div>
+              </div>
+          </div>
+          <div class="gallery__item">
+              <div class="gallery__card">
+                  <img src="mithonDam.webp" alt="Gallery Image 6" class="gallery__img">
+                  <div class="gallery__overlay">
+                      <p class="gallery__text">Near view of guest house</p>
+                  </div>
+              </div>
+          </div>
+          <div class="gallery__item">
+            <div class="gallery__card">
+                <img src="service.jpg" alt="Gallery Image 7" id="image7" class="gallery__img">
+                <div class="gallery__overlay">
+                    <p class="gallery__text">Service area and receptionist</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery__item">
+          <div class="gallery__card">
+              <img src="room1.jpg" alt="Gallery Image 8" class="gallery__img">
+              <div class="gallery__overlay">
+                  <p class="gallery__text">Room view in guesthouse</p>
+              </div>
+          </div>
+      </div>
+      <div class="gallery__item">
+        <div class="gallery__card">
+            <img src="palash.webp" alt="Gallery Image 9" class="gallery__img">
+            <div class="gallery__overlay">
+                <p class="gallery__text">Other side of guesthouse</p>
+            </div>
+        </div>
+    </div>
+      </div></div>
+  </section>
+  
+    
+
+
+
+
+
+
+
+    <!-- Explore Section -->
+    <section id="explore" class="section__container explore"><div id="explore">
+        <h2 class="section__subheader">Explore</h2>
+        <h3 class="section__header">Discover the Area</h3>
+        <div class="explore__bg">
+            <div class="explore__content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet libero id purus facilisis luctus at non risus.</p>
+                <h4>Find Out More</h4>
+                <button class="btn">Explore Now</button>
+            </div>
+        </div></div>
+    </section>
+
+
+
+
+  
+    <section class="contact-section"> <div id="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="info-content">
+                    <h2>Contact Info</h2>
+                    <p>We are here to help you. Reach out to us anytime and we'll happily answer your questions.</p>
+                    <ul class="info-list">
+                        <li><i class="fas fa-map-marker-alt"></i> Beside Barshal Water Tank, Manpur, Barhanti, West Bengal 723156</li>
+                        <li><i class="fas fa-envelope"></i> kkghosh0099@gmail.com</li>
+                        <li><i class="fas fa-phone-alt"></i> +91 9007062180</li>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form action="#">
+                    <div class="form-title">
+                        <h2>Send a Message</h2>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" placeholder="First Name" required>
+                        <input type="text" placeholder="Last Name" required>
+                    </div>
+                    <div class="input-box">
+                        <input type="email" placeholder="Email Address" required>
+                        <input type="tel" placeholder="Mobile Number" required>
+                    </div>
+                    <textarea placeholder="Write your message here..." required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div></div>
+    </section>
+
+
+
+     <!-- Map Section -->
+     <section class="map-section">
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29198.437680511764!2d86.54301826229026!3d23.615761013858797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f58d4bbd9d561f%3A0xa3a8388b5c7362e2!2sManpur%2C%20West%20Bengal%20723156!5e0!3m2!1sen!2sin!4v1692666901172!5m2!1sen!2sin" 
+                width="100%" 
+                height="550" 
+                frameborder="0" 
+                style="border:0;" 
+                allowfullscreen="" 
+                aria-hidden="false" 
+                tabindex="0">
+            </iframe>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <h4>Kingsukh Guest House</h4>
+                <p class="section__description">Discover a world of comfort, luxury, and adventure as you explore our curated selection of hotels, making every moment of your gateway truly extraordinary.</p>
+                <button>Book Now</button>
+            </div>
+            <div class="footer__col">
+                <h4>Quick Links</h4>
+                <ul class="footer__links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#rooms">Rooms</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#explore">Explore</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>Contact Us</h4>
+                <p class="section__description">Beside Barshal Water Tank, <br> Manpur, Barhanti, <br> West Bengal 723156</p>
+                <p class="section__description">Phone: +91 9007062180</p>
+                <p class="section__description">Email: kkghosh0099.com</p>
+            </div>
+            <div class="footer__col">
+                <h4>Follow Us</h4>
+                <div class="footer__socials">
+                    <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="instagram.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bar">
+            &copy; 2024 Guest House. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.nav__menu__btn').addEventListener('click', () => {
+            document.querySelector('.nav__links').classList.toggle('open');
+        });
+    </script>
+</body>
+
+</html>
+
+
+<!---html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guest House</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <nav>
+      <div class="nav__bar">
+        <img src="logo.png" alt="Logo" class="logo">
+        <span class="nav__menu__btn">&#9776;</span>
+        <ul class="nav__links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#rooms">Rooms</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#" class="btn nav__btn">Book Now</a>
+      </div>
+    </nav>
+    <div class="header__container section__container">
+      <p>Welcome to Our Guest House</p>
+      <h1>Experience <span>Luxury</span> & Comfort</h1>
+    </div>
+  </header>
+
+  <section id="about" class="about section__container">
+    <h2 class="section__subheader">About Us</h2>
+    <h3 class="section__header">Discover Our Guest House</h3>
+    <p class="section__description">Our guest house offers the best in luxury and comfort. Experience a memorable stay with us.</p>
+    <div class="about__container">
+      <div class="about__image">
+        <img src="about.jpg" alt="About Us">
+      </div>
+      <div class="about__content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="rooms" class="rooms section__container">
+    <h2 class="section__subheader">Rooms</h2>
+    <h3 class="section__header">Our Accommodation</h3>
+    <p class="section__description">Explore our luxurious and comfortable rooms designed for your perfect stay.</p>
+    <div class="room__grid">
+      <div class="room__card">
+        <div class="room__card__image">
+          <img src="room1.jpg" alt="Room 1">
+        </div>
+        <div class="room__card__details">
+          <h4>Deluxe Room</h4>
+          <p>Spacious and luxurious room with a comfortable bed and modern amenities.</p>
+          <h5>Price: <span>$100/night</span></h5>
+        </div>
+      </div>
+      <div class="room__card">
+        <div class="room__card__image">
+          <img src="room2.jpg" alt="Room 2">
+        </div>
+        <div class="room__card__details">
+          <h4>Suite</h4>
+          <p>Experience luxury in our suite with separate living area and premium facilities.</p>
+          <h5>Price: <span>$200/night</span></h5>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="service section__container">
+    <h2 class="section__subheader">Services</h2>
+    <h3 class="section__header">What We Offer</h3>
+    <p class="section__description">Our guest house provides top-notch services to ensure a pleasant stay.</p>
+    <div class="service__container">
+      <div class="service__content">
+        <ul class="service__list">
+          <li><span>&#128717;</span>24/7 Room Service</li>
+          <li><span>&#127860;</span>Restaurant & Bar</li>
+          <li><span>&#128663;</span>Free Parking</li>
+          <li><span>&#127765;</span>Swimming Pool</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="explore" class="explore section__container">
+    <h2 class="section__subheader">Explore</h2>
+    <h3 class="section__header">Discover Our City</h3>
+    <p class="section__description">Find out the best places to visit and things to do around our guest house.</p>
+    <div class="explore__bg">
+      <div class="explore__content">
+        <h4>City Highlights</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+        <a href="#" class="btn">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer section__container">
+    <div class="footer__container">
+      <div class="footer__col">
+        <h4>Contact Us</h4>
+        <p class="section__description">123 Street, City, Country</p>
+        <p class="section__description">Phone: +123 456 7890</p>
+        <p class="section__description">Email: info@guesthouse.com</p>
+      </div>
+      <div class="footer__col">
+        <h4>Quick Links</h4>
+        <ul class="footer__links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#rooms">Rooms</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Follow Us</h4>
+        <div class="footer__socials">
+          <a href="#"><img src="facebook.png" alt="Facebook"></a>
+          <a href="#"><img src="twitter.png" alt="Twitter"></a>
+          <a href="#"><img src="instagram.png" alt="Instagram"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bar">
+      <p>&copy; 2024 Guest House. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+--->
